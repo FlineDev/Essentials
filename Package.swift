@@ -1,8 +1,9 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.8
 import PackageDescription
 
 let package = Package(
    name: "Foundation",
+   platforms: [.iOS(.v16), .macOS(.v13), .tvOS(.v16), .watchOS(.v9)],
    products: [
       .library(name: "AppFoundation", targets: ["AppFoundation"]),
       .library(name: "TestFoundation", targets: ["TestFoundation"]),
@@ -14,7 +15,6 @@ let package = Package(
       // FlineDev
       .package(url: "https://github.com/FlineDev/HandySwift.git", branch: "main"),
       .package(url: "https://github.com/FlineDev/HandySwiftUI.git", branch: "main"),
-      .package(url: "https://github.com/FlineDev/ReviewKit.git", branch: "main"),
 
       // 3rd-Party
       .package(url: "https://github.com/pointfreeco/swift-custom-dump.git", from: "1.0.0"),
@@ -31,7 +31,6 @@ let package = Package(
             // FlineDev
             .product(name: "HandySwift", package: "HandySwift"),
             .product(name: "HandySwiftUI", package: "HandySwiftUI"),
-            .product(name: "ReviewKit", package: "ReviewKit"),
 
             // 3rd-Party
             .product(name: "Dependencies", package: "swift-dependencies"),

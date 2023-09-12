@@ -8,7 +8,6 @@
 // FlineDev
 @_exported import HandySwift
 @_exported import HandySwiftUI
-@_exported import ReviewKit
 
 // 3rd-Party
 @_exported import Dependencies
