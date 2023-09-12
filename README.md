@@ -1,3 +1,5 @@
+![Foundation Logo](https://github.com/FlineDev/Foundation/blob/main/Logo.png?raw=true)
+
 # Foundation
 
 This framework simply consists of the files [AppFoundation.swift](https://github.com/FlineDev/Foundation/blob/main/Sources/AppFoundation/AppFoundation.swift) and [TestFoundation.swift](https://github.com/FlineDev/Foundation/blob/main/Sources/TestFoundation/TestFoundation.swift) which contains just a collection of `@_exported import` statements of frameworks I use in every new app.
