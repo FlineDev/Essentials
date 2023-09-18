@@ -20,6 +20,7 @@ let package = Package(
       .package(url: "https://github.com/pointfreeco/swift-custom-dump.git", from: "1.0.0"),
       .package(url: "https://github.com/pointfreeco/swift-dependencies.git", from: "1.0.0"),
       .package(url: "https://github.com/pointfreeco/swift-identified-collections.git", from: "1.0.0"),
+      .package(url: "https://github.com/pointfreeco/swift-tagged.git", from: "0.10.0"),
    ],
    targets: [
       .target(
@@ -35,6 +36,7 @@ let package = Package(
             // 3rd-Party
             .product(name: "Dependencies", package: "swift-dependencies"),
             .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
+            .product(name: "Tagged", package: "swift-tagged"),
          ]
       ),
       .target(
