@@ -12,3 +12,4 @@
 // 3rd-Party
 @_exported import Dependencies
 @_exported import IdentifiedCollections
+@_exported import Tagged
