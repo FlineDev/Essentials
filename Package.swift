@@ -6,6 +6,7 @@ let package = Package(
    platforms: [.iOS(.v16), .macOS(.v13), .tvOS(.v16), .watchOS(.v9)],
    products: [
       .library(name: "AppFoundation", targets: ["AppFoundation"]),
+      .library(name: "ServerFoundation", targets: ["ServerFoundation"]),
       .library(name: "TestFoundation", targets: ["TestFoundation"]),
    ],
    dependencies: [
@@ -36,6 +37,19 @@ let package = Package(
             // 3rd-Party
             .product(name: "Dependencies", package: "swift-dependencies"),
             .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
+            .product(name: "Tagged", package: "swift-tagged"),
+         ]
+      ),
+      .target(
+         name: "ServerFoundation",
+         dependencies: [
+            // Apple
+            .product(name: "OrderedCollections", package: "swift-collections"),
+
+            // FlineDev
+            .product(name: "HandySwift", package: "HandySwift"),
+
+            // 3rd-Party
             .product(name: "Tagged", package: "swift-tagged"),
          ]
       ),
