@@ -2,6 +2,9 @@
 @_exported import Foundation
 @_exported import XCTest
 
+// Vapor
+@_exported import XCTVapor
+
 // FlineDev
 @_exported import HandySwift
 
