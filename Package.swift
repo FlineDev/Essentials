@@ -6,7 +6,7 @@ let package = Package(
    platforms: [.iOS(.v16), .macOS(.v13), .tvOS(.v16), .watchOS(.v9)],
    products: [
       .library(name: "AppFoundation", targets: ["AppFoundation"]),
-      .library(name: "DataFoundation", targets: ["DataFoundation"]),
+      .library(name: "FoundationPlus", targets: ["FoundationPlus"]),
       .library(name: "TestFoundation", targets: ["TestFoundation"]),
    ],
    dependencies: [
@@ -41,7 +41,7 @@ let package = Package(
          ]
       ),
       .target(
-         name: "DataFoundation",  // for code shared between Apple Platform apps and server-side Vapor apps
+         name: "FoundationPlus",  // for code shared between Apple Platform apps and server-side Vapor apps
          dependencies: [
             // Apple
             .product(name: "OrderedCollections", package: "swift-collections"),
