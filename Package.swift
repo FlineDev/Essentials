@@ -27,17 +27,15 @@ let package = Package(
       .target(
          name: "AppFoundation",  // for Apple Platform applications (like iOS, macOS, or visionOS)
          dependencies: [
-            // Apple
-            .product(name: "OrderedCollections", package: "swift-collections"),
+            // Package
+            "FoundationPlus",
       
             // FlineDev
-            .product(name: "HandySwift", package: "HandySwift"),
             .product(name: "HandySwiftUI", package: "HandySwiftUI"),
 
             // 3rd-Party
             .product(name: "Dependencies", package: "swift-dependencies"),
             .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
-            .product(name: "Tagged", package: "swift-tagged"),
          ]
       ),
       .target(
@@ -56,9 +54,9 @@ let package = Package(
       .target(
          name: "TestFoundation",  // for test targets in Apple Platform projects
          dependencies: [
-            // FlineDev
-            .product(name: "HandySwift", package: "HandySwift"),
-            
+            // Package
+            "FoundationPlus",
+
             // 3rd-Party
             .product(name: "CustomDump", package: "swift-custom-dump"),
          ]

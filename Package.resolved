@@ -15,7 +15,7 @@
       "location" : "https://github.com/FlineDev/HandySwift.git",
       "state" : {
         "branch" : "main",
-        "revision" : "2f054f427a73f78835e8d7327e3d1eb3ff169ad8"
+        "revision" : "985a5fe3ceb6b3416f6725fd82ff077289b3b785"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/FlineDev/HandySwiftUI.git",
       "state" : {
         "branch" : "main",
-        "revision" : "77587003e0d7facd88fa40d0b99ff2e31778aa94"
+        "revision" : "efe39f332b310bec6bfa0699245832f534f2007b"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-collections.git",
       "state" : {
-        "revision" : "937e904258d22af6e447a0b72c0bc67583ef64a2",
-        "version" : "1.0.4"
+        "revision" : "a902f1823a7ff3c9ab2fba0f992396b948eda307",
+        "version" : "1.0.5"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-custom-dump.git",
       "state" : {
-        "revision" : "edd66cace818e1b1c6f1b3349bb1d8e00d6f8b01",
-        "version" : "1.0.0"
+        "revision" : "3efbfba0e4e56c7187cc19137ee16b7c95346b79",
+        "version" : "1.1.0"
       }
     },
     {
