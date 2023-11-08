@@ -54,6 +54,7 @@ let package = Package(
             "FoundationPlus",
 
             // 3rd-Party
+            .product(name: "Dependencies", package: "swift-dependencies"),
             .product(name: "CustomDump", package: "swift-custom-dump"),
          ]
       ),
