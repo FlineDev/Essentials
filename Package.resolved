@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "reviewkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FlineDev/ReviewKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9b6009309a902fc1469630d3e304abb191237cfc"
+      }
+    },
+    {
       "identity" : "swift-clocks",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-clocks",

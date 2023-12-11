@@ -16,6 +16,7 @@ let package = Package(
       // FlineDev
       .package(url: "https://github.com/FlineDev/HandySwift.git", branch: "main"),
       .package(url: "https://github.com/FlineDev/HandySwiftUI.git", branch: "main"),
+      .package(url: "https://github.com/FlineDev/ReviewKit.git", branch: "main"),
 
       // 3rd-Party
       .package(url: "https://github.com/pointfreeco/swift-custom-dump.git", from: "1.0.0"),
@@ -31,6 +32,7 @@ let package = Package(
       
             // FlineDev
             .product(name: "HandySwiftUI", package: "HandySwiftUI"),
+            .product(name: "ReviewKit", package: "ReviewKit"),
 
             // 3rd-Party
             .product(name: "Dependencies", package: "swift-dependencies"),
