@@ -5,6 +5,7 @@
 @_exported import OSLog
 @_exported import SwiftData
 @_exported import SwiftUI
+@_exported import TipKit
 
 // FlineDev
 @_exported import HandySwiftUI
