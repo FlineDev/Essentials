@@ -12,5 +12,5 @@
 @_exported import ReviewKit
 
 // 3rd-Party
-@_exported import Dependencies
+@_exported import CloudStorage
 @_exported import IdentifiedCollections

@@ -19,8 +19,8 @@ let package = Package(
       .package(url: "https://github.com/FlineDev/ReviewKit.git", branch: "main"),
 
       // 3rd-Party
+      .package(url: "https://github.com/Jeehut/CloudStorage.git", branch: "main"),
       .package(url: "https://github.com/pointfreeco/swift-custom-dump.git", from: "1.0.0"),
-      .package(url: "https://github.com/pointfreeco/swift-dependencies.git", from: "1.0.0"),
       .package(url: "https://github.com/pointfreeco/swift-identified-collections.git", from: "1.0.0"),
    ],
    targets: [
@@ -35,7 +35,7 @@ let package = Package(
             .product(name: "ReviewKit", package: "ReviewKit"),
 
             // 3rd-Party
-            .product(name: "Dependencies", package: "swift-dependencies"),
+            .product(name: "CloudStorage", package: "CloudStorage"),
             .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
          ]
       ),
@@ -56,7 +56,6 @@ let package = Package(
             "FoundationPlus",
 
             // 3rd-Party
-            .product(name: "Dependencies", package: "swift-dependencies"),
             .product(name: "CustomDump", package: "swift-custom-dump"),
          ]
       ),
