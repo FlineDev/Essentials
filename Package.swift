@@ -2,12 +2,11 @@
 import PackageDescription
 
 let package = Package(
-   name: "Foundation",
+   name: "Essentials",
    platforms: [.iOS(.v16), .macOS(.v13), .tvOS(.v16), .watchOS(.v9)],
    products: [
-      .library(name: "AppFoundation", targets: ["AppFoundation"]),
+      .library(name: "SwiftUIPlus", targets: ["SwiftUIPlus"]),
       .library(name: "FoundationPlus", targets: ["FoundationPlus"]),
-      .library(name: "TestFoundation", targets: ["TestFoundation"]),
    ],
    dependencies: [
       // Apple
@@ -19,13 +18,13 @@ let package = Package(
       .package(url: "https://github.com/FlineDev/ReviewKit.git", branch: "main"),
 
       // 3rd-Party
-      .package(url: "https://github.com/Jeehut/CloudStorage.git", branch: "main"),
-      .package(url: "https://github.com/pointfreeco/swift-custom-dump.git", from: "1.0.0"),
+      .package(url: "https://github.com/nonstrict-hq/CloudStorage.git", from: "0.5.0"),
       .package(url: "https://github.com/pointfreeco/swift-identified-collections.git", from: "1.0.0"),
+      .package(url: "https://github.com/TelemetryDeck/SwiftSDK.git", from: "2.3.0"),
    ],
    targets: [
       .target(
-         name: "AppFoundation",  // for Apple Platform applications (like iOS, macOS, or visionOS)
+         name: "SwiftUIPlus",  // for Apple Platform applications using SwiftUI (like iOS, macOS, or visionOS)
          dependencies: [
             // Package
             "FoundationPlus",
@@ -37,26 +36,17 @@ let package = Package(
             // 3rd-Party
             .product(name: "CloudStorage", package: "CloudStorage"),
             .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
+            .product(name: "TelemetryDeck", package: "SwiftSDK"),
          ]
       ),
       .target(
-         name: "FoundationPlus",  // for code shared between Apple Platform apps and server-side Vapor apps
+         name: "FoundationPlus",  // for code not directly related to a SwiftUI application target like tests or servers
          dependencies: [
             // Apple
             .product(name: "OrderedCollections", package: "swift-collections"),
 
             // FlineDev
             .product(name: "HandySwift", package: "HandySwift"),
-         ]
-      ),
-      .target(
-         name: "TestFoundation",  // for test targets in Apple Platform projects
-         dependencies: [
-            // Package
-            "FoundationPlus",
-
-            // 3rd-Party
-            .product(name: "CustomDump", package: "swift-custom-dump"),
          ]
       ),
    ]

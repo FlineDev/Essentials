@@ -14,3 +14,4 @@
 // 3rd-Party
 @_exported import CloudStorage
 @_exported import IdentifiedCollections
+@_exported import TelemetryDeck
