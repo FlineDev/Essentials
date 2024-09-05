@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "freemiumkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FlineDev/FreemiumKit.git",
+      "state" : {
+        "revision" : "965d3fffe7bf2ce428d3dd6eaded2293665c64b9",
+        "version" : "1.7.1"
+      }
+    },
+    {
       "identity" : "handyswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/FlineDev/HandySwift.git",
