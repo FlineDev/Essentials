@@ -16,6 +16,7 @@ let package = Package(
       .package(url: "https://github.com/FlineDev/FreemiumKit.git", from: "1.7.1"),
       .package(url: "https://github.com/FlineDev/HandySwift.git", branch: "main"),
       .package(url: "https://github.com/FlineDev/HandySwiftUI.git", branch: "main"),
+      .package(url: "https://github.com/FlineDev/LinksKit.git", branch: "main"),
       .package(url: "https://github.com/FlineDev/ReviewKit.git", branch: "main"),
 
       // 3rd-Party
@@ -34,6 +35,7 @@ let package = Package(
             .product(name: "FreemiumKit", package: "FreemiumKit"),
             .product(name: "HandySwift", package: "HandySwift"),
             .product(name: "HandySwiftUI", package: "HandySwiftUI"),
+            .product(name: "LinksKit", package: "LinksKit"),
             .product(name: "ReviewKit", package: "ReviewKit"),
 
             // 3rd-Party

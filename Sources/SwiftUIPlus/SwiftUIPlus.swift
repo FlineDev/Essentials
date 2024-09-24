@@ -11,6 +11,7 @@
 @_exported import FreemiumKit
 @_exported import HandySwift
 @_exported import HandySwiftUI
+@_exported import LinksKit
 @_exported import ReviewKit
 
 // 3rd-Party

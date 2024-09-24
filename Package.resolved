@@ -37,6 +37,15 @@
       }
     },
     {
+      "identity" : "linkskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FlineDev/LinksKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b15a223647bc614e92201edb754d92fef7902d74"
+      }
+    },
+    {
       "identity" : "reviewkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/FlineDev/ReviewKit.git",
